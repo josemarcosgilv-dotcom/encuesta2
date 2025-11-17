@@ -119,11 +119,6 @@
     button:hover {
       background: #0033a0;
     }
-     .radios{display:flex;flex-direction:column;gap:8px}
-    .radios label{display:flex;align-items:center;gap:10px;cursor:pointer;padding:6px 8px;border-radius:8px}
-    .radios input[type="radio"]{width:18px;height:18px;accent-color:var(--brand)}
-     .question{margin:12px 0}
-    .question label{display:block;font-weight:700;color:var(--brand);margin-bottom:8px}
   </style>
 </head>
 <body>
@@ -136,33 +131,35 @@
     <h1>Encuesta de Satisfacción</h1>
     <p>Su opinión es valiosa para ayudarnos a mejorar nuestros servicios. Esta encuesta es anónima.</p>
 
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLScMH6AWJo363Q-kilSk4fQV_HAsdfygfeOBvraw68GfbB0Xhg/formResponse" 
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf2KzHy5pkkr6PHHmKZnqaxefjESfhAwnSuJGFH1CGadjA7lQ/formResponse" 
       method="POST" target="_blank">
 
       
-      <label>¿El personal de enfermería mostró un trato respetuoso, cordial y empático durante su atención?</label>
-      <div class="rating">
-        <input type="radio" id="r1-1" name="entry.127638231" value="1"><label for="r1-1"><span class="star">★</span><span class="text-label">Inconforme</span></label>
-        <input type="radio" id="r1-2" name="entry.127638231" value="2"><label for="r1-2"><span class="star">★</span><span class="text-label">Aceptable</span></label>
-        <input type="radio" id="r1-3" name="entry.127638231" value="3"><label for="r1-3"><span class="star">★</span><span class="text-label">Regular</span></label>
-        <input type="radio" id="r1-4" name="entry.127638231" value="4"><label for="r1-4"><span class="star">★</span><span class="text-label">Bueno</span></label>
-        <input type="radio" id="r1-5" name="entry.127638231" value="5"><label for="r1-5"><span class="star">★</span><span class="text-label">Excelente</span></label>
-      </div>
+      <section class="section active" data-step="0">
+        <label>1) ¿Cuánto le gusta el chompipe?</label>
+        <div class="rating">
+          <input type="radio" id="r1-1" name="entry.1226995436" value="1"><label for="r1-1"><span class="star">★</span><span class="text-label">Deficiente</span></label>
+          <input type="radio" id="r1-2" name="entry.1226995436" value="2"><label for="r1-2"><span class="star">★</span><span class="text-label">Regular</span></label>
+          <input type="radio" id="r1-3" name="entry.1226995436" value="3"><label for="r1-3"><span class="star">★</span><span class="text-label">Bueno</span></label>
+          <input type="radio" id="r1-4" name="entry.1226995436" value="4"><label for="r1-4"><span class="star">★</span><span class="text-label">Muy bueno</span></label>
+          <input type="radio" id="r1-5" name="entry.1226995436" value="5"><label for="r1-5"><span class="star">★</span><span class="text-label">Excelente</span></label>
+        </div>
 
       <div class="question">
-          <label>2) ¿El personal de Recepción le brindó información clara y pertinente?</label>
-          <div class="radios" role="radiogroup" aria-label="Recepción - info">
-            <label><input type="radio" name="entry.748788905" value="Totalmente" required> Totalmente</label>
-            <label><input type="radio" name="entry.748788905" value="A mí también"> A mí también</label>
-            <label><input type="radio" name="entry.748788905" value="Parcialmente"> Qué repugnante</label>
+          <label>2) Chompipe con patas</label>
+          <div class="radios">
+            <label><input type="radio" name="entry.1643644711" value="1" required> 1</label>
+            <label><input type="radio" name="entry.1643644711" value="2"> 2</label>
+            <label><input type="radio" name="entry.1643644711" value="3"> 3</label>
+            <label><input type="radio" name="entry.1643644711" value="4"> 4</label>
+            <label><input type="radio" name="entry.1643644711" value="5"> 5</label>
           </div>
         </div>
 
-
+      
       <button type="submit">Enviar Respuestas</button>
     </form>
   </div>
 </body>
 </html>
-
 
